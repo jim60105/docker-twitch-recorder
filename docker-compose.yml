@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  record:
+    image: ghcr.io/jim60105/docker-twitch-recorder
+    # build: .
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - ${ARCHIVE}:/download
+    # logging:
+    #   driver: "gelf"
+    #   options:
+    #     gelf-address: "udp://127.0.0.1:12201"

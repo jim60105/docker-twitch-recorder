@@ -1,0 +1,3 @@
+[submodule "twitch-stream-recorder"]
+	path = twitch-stream-recorder
+	url = https://github.com/jim60105/twitch-stream-recorder.git
